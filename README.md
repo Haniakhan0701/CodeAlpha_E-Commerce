@@ -40,4 +40,3 @@ A full-stack handmade goods marketplace built with the MERN stack — buyer and 
 - **Database:** MongoDB (Mongoose)
 - **Auth:** JWT, bcrypt
 
-## Project Structure
