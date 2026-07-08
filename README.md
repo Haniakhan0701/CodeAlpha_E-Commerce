@@ -1,6 +1,9 @@
 # CodeAlpha_E-Commerce (Kraftly)
 
 A full-stack handmade goods marketplace built with the MERN stack — buyer and seller dashboards, real authentication, cart, checkout, orders, and zero listing fees. Built for the CodeAlpha Full Stack Development internship.
+<img width="1892" height="842" alt="Screenshot (660)" src="https://github.com/user-attachments/assets/d7e4ce78-c019-402f-97b3-b6131d20c310" />
+<img width="1881" height="841" alt="Screenshot (661)" src="https://github.com/user-attachments/assets/932cad57-ba81-426d-92e5-73107c8ddb6c" />
+<img width="1920" height="829" alt="Screenshot (662)" src="https://github.com/user-attachments/assets/f6067cc2-5e3e-49ce-9bae-3325a00776fc" />
 
 ## Features
 
