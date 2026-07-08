@@ -1,0 +1,120 @@
+/**
+ * Kraftly — shared design tokens, v3.
+ * Visual identity: "Violet Current" — a bold indigo/violet palette inspired
+ * by high-contrast product illustration style: deep indigo-black for the
+ * hero band, a vivid violet-blue as the primary accent, soft lavender as
+ * the page base, and warm gold reserved specifically for star ratings
+ * (kept for usability — universally read as "rating," not restyled).
+ *
+ * Variable NAMES are unchanged from v2 (--kf-clay, --kf-forest, etc.) so
+ * every component built earlier inherits this new palette automatically —
+ * only the color VALUES changed here.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap");
+
+:root {
+  --kf-paper: #f5f3fc;
+  --kf-paper-dim: #e9e4f9;
+  --kf-card: #ffffff;
+  --kf-ink: #201a3d;
+  --kf-ink-dim: #6f6a8f;
+  --kf-espresso: #150f2e;
+  --kf-clay: #6d4cf0;
+  --kf-clay-dark: #5637d1;
+  --kf-forest: #3b6fe0;
+  --kf-gold: #f0a940;
+  --kf-plum: #4c6fff;
+  --kf-border: #e0daf5;
+  --kf-cream-text: #f1eefb;
+
+  --kf-display: "Fraunces", serif;
+  --kf-body: "Inter", sans-serif;
+  --kf-mono: "IBM Plex Mono", monospace;
+}
+
+.kf-app {
+  font-family: var(--kf-body);
+  color: var(--kf-ink);
+  background: var(--kf-paper);
+  min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.kf-stitch {
+  border: none;
+  border-top: 2px dotted var(--kf-border);
+  margin: 1.5rem 0;
+}
+
+.kf-btn-primary {
+  background: linear-gradient(135deg, var(--kf-clay), var(--kf-plum));
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  padding: 0.75rem 1.4rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: var(--kf-body);
+  transition: filter 0.15s ease, transform 0.1s ease;
+  box-shadow: 0 10px 25px -10px rgba(109, 76, 240, 0.55);
+}
+
+.kf-btn-primary:hover {
+  filter: brightness(1.08);
+}
+
+.kf-btn-primary:active {
+  transform: scale(0.97);
+}
+
+.kf-btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.kf-btn-ghost {
+  background: transparent;
+  color: var(--kf-ink);
+  border: 1.5px solid var(--kf-border);
+  font-weight: 600;
+  padding: 0.7rem 1.3rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: var(--kf-body);
+}
+
+.kf-btn-ghost:hover {
+  border-color: var(--kf-clay);
+  color: var(--kf-clay);
+}
+
+.kf-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: var(--kf-paper-dim);
+  color: var(--kf-ink-dim);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-family: var(--kf-mono);
+}
+
+.kf-badge-plum {
+  background: var(--kf-plum);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}

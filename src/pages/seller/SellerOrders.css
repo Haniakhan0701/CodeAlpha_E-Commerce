@@ -1,0 +1,85 @@
+.kf-so-header h1 {
+  font-family: var(--kf-display);
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin: 0 0 0.2rem;
+}
+
+.kf-so-header p {
+  color: var(--kf-ink-dim);
+  margin: 0 0 1.5rem;
+  font-size: 0.9rem;
+}
+
+.kf-so-table {
+  background: var(--kf-card);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px -18px rgba(32, 26, 61, 0.25);
+}
+
+.kf-so-row {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr 0.9fr 0.7fr 0.9fr 1.1fr;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.9rem 1.2rem;
+  border-bottom: 1px solid var(--kf-border);
+  font-size: 0.85rem;
+}
+
+.kf-so-row:last-child {
+  border-bottom: none;
+}
+
+.kf-so-row-head {
+  background: var(--kf-paper-dim);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--kf-ink-dim);
+  font-weight: 700;
+}
+
+.kf-so-buyer {
+  font-weight: 600;
+}
+
+.kf-so-date {
+  font-family: var(--kf-mono);
+  color: var(--kf-ink-dim);
+  font-size: 0.8rem;
+}
+
+.kf-so-total {
+  font-family: var(--kf-mono);
+  font-weight: 600;
+}
+
+.kf-order-status {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+}
+
+.kf-order-status.processing {
+  background: rgba(240, 169, 64, 0.15);
+  color: #a3711f;
+}
+
+.kf-order-status.shipped {
+  background: rgba(76, 111, 255, 0.12);
+  color: var(--kf-forest);
+}
+
+.kf-order-status.delivered {
+  background: rgba(76, 175, 80, 0.12);
+  color: #2e7d4f;
+}
+
+.kf-so-advance {
+  font-size: 0.75rem;
+  padding: 0.4rem 0.8rem;
+  justify-self: end;
+}

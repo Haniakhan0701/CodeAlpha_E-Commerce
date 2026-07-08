@@ -1,0 +1,136 @@
+.kf-sl-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.kf-sl-header h1 {
+  font-family: var(--kf-display);
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin: 0 0 0.2rem;
+}
+
+.kf-sl-header p {
+  color: var(--kf-ink-dim);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.kf-sl-filters {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.kf-sl-filters button {
+  border: 1.5px solid var(--kf-border);
+  background: #fff;
+  color: var(--kf-ink-dim);
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.kf-sl-filters button.active {
+  background: var(--kf-ink);
+  border-color: var(--kf-ink);
+  color: #fff;
+}
+
+.kf-sl-table {
+  background: var(--kf-card);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px -18px rgba(32, 26, 61, 0.25);
+}
+
+.kf-sl-row {
+  display: grid;
+  grid-template-columns: 2.2fr 0.8fr 0.9fr 0.7fr 0.8fr 0.7fr 0.7fr;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.9rem 1.2rem;
+  border-bottom: 1px solid var(--kf-border);
+  font-size: 0.85rem;
+}
+
+.kf-sl-row:last-child {
+  border-bottom: none;
+}
+
+.kf-sl-row-head {
+  background: var(--kf-paper-dim);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--kf-ink-dim);
+  font-weight: 700;
+}
+
+.kf-sl-listing-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.kf-sl-listing-cell img {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.kf-sl-title {
+  margin: 0;
+  font-weight: 600;
+}
+
+.kf-sl-category {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--kf-ink-dim);
+}
+
+.kf-sl-price {
+  font-family: var(--kf-mono);
+  font-weight: 600;
+}
+
+.kf-status-pill {
+  border: none;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.kf-status-pill.active {
+  background: rgba(59, 111, 224, 0.12);
+  color: var(--kf-forest);
+}
+
+.kf-status-pill.draft {
+  background: var(--kf-paper-dim);
+  color: var(--kf-ink-dim);
+}
+
+.kf-sl-delete {
+  border: none;
+  background: none;
+  color: var(--kf-clay-dark);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  justify-self: end;
+}
+
+.kf-empty-state {
+  padding: 2rem;
+  text-align: center;
+  color: var(--kf-ink-dim);
+}

@@ -1,0 +1,117 @@
+.kf-orders-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.kf-orders-title {
+  font-family: var(--kf-display);
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin: 0 0 1.5rem;
+}
+
+.kf-orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.kf-order-card {
+  background: var(--kf-card);
+  border-radius: 16px;
+  padding: 1.3rem 1.5rem;
+  box-shadow: 0 10px 25px -18px rgba(32, 26, 61, 0.3);
+}
+
+.kf-order-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--kf-border);
+}
+
+.kf-order-id {
+  margin: 0 0 0.2rem;
+  font-weight: 700;
+  font-family: var(--kf-mono);
+  font-size: 0.85rem;
+}
+
+.kf-order-date {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--kf-ink-dim);
+}
+
+.kf-order-status {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+}
+
+.kf-order-status.processing {
+  background: rgba(240, 169, 64, 0.15);
+  color: #a3711f;
+}
+
+.kf-order-status.shipped {
+  background: rgba(76, 111, 255, 0.12);
+  color: var(--kf-forest);
+}
+
+.kf-order-status.delivered {
+  background: rgba(76, 175, 80, 0.12);
+  color: #2e7d4f;
+}
+
+.kf-order-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.kf-order-item {
+  display: flex;
+  gap: 0.7rem;
+  font-size: 0.88rem;
+}
+
+.kf-order-item span:first-child {
+  flex: 1;
+}
+
+.kf-order-item-qty {
+  color: var(--kf-ink-dim);
+}
+
+.kf-order-item-price {
+  font-family: var(--kf-mono);
+  font-weight: 600;
+}
+
+.kf-order-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 1rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--kf-border);
+}
+
+.kf-favorites-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.kf-favorites-title {
+  font-family: var(--kf-display);
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin: 0 0 1.5rem;
+}

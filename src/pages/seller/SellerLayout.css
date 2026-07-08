@@ -1,0 +1,126 @@
+.kf-seller-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+  background: var(--kf-paper);
+}
+
+.kf-seller-sidebar {
+  background: var(--kf-espresso);
+  color: var(--kf-cream-text);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.kf-seller-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--kf-display);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.2rem;
+}
+
+.kf-seller-logo img {
+  height: 24px;
+  width: auto;
+}
+
+.kf-seller-shop-name {
+  font-size: 0.78rem;
+  color: #a89fcf;
+  margin: 0 0 1.5rem;
+  font-family: var(--kf-mono);
+}
+
+.kf-seller-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.kf-seller-nav a {
+  color: #cfc9e8;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.65rem 0.9rem;
+  border-radius: 10px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.kf-seller-nav a:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.kf-seller-nav a.active {
+  background: linear-gradient(135deg, var(--kf-clay), var(--kf-plum));
+  color: #fff;
+}
+
+.kf-fee-badge {
+  margin-top: auto;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.kf-fee-badge-title {
+  margin: 0 0 0.3rem;
+  font-family: var(--kf-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  background: linear-gradient(120deg, #a78bfa, #6d4cf0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.kf-fee-badge-sub {
+  margin: 0;
+  font-size: 0.76rem;
+  color: #b9b3d6;
+  line-height: 1.4;
+}
+
+.kf-seller-exit {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #a89fcf;
+  text-decoration: none;
+}
+
+.kf-seller-exit:hover {
+  color: #fff;
+}
+
+.kf-seller-main {
+  padding: 2rem 2.5rem 3rem;
+}
+
+@media (max-width: 800px) {
+  .kf-seller-layout {
+    grid-template-columns: 1fr;
+  }
+  .kf-seller-sidebar {
+    height: auto;
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .kf-fee-badge,
+  .kf-seller-exit {
+    display: none;
+  }
+}
