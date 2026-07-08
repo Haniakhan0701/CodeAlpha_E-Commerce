@@ -28,6 +28,7 @@ A full-stack handmade goods marketplace built with the MERN stack — buyer and 
 **Core**
 - Real JWT-based authentication (signup/login/logout, session persistence)
 - MongoDB-backed data — users, products, shops, orders, reviews
+- 
   <img width="1768" height="690" alt="Screenshot (710)" src="https://github.com/user-attachments/assets/fba1b291-47cf-43f1-8856-c031bc7a223d" />
 
 - Fully responsive design
