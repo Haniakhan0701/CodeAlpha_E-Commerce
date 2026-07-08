@@ -1,16 +1,30 @@
-# React + Vite
+# CodeAlpha_E-Commerce (Kraftly)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack handmade goods marketplace built with the MERN stack — buyer and seller dashboards, real authentication, cart, checkout, orders, and zero listing fees. Built for the CodeAlpha Full Stack Development internship.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Buyer side**
+- Browse products by category, with real-time search
+- Product detail pages with image galleries, variants, and reviews
+- Real cart, checkout, and order history
+- Save favorites and follow shops
 
-## React Compiler
+**Seller side**
+- Seller dashboard with revenue, views, and order stats
+- Simple listing creation — no per-listing fees, unlike traditional marketplaces
+- Order management with status tracking (Processing → Shipped → Delivered)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Core**
+- Real JWT-based authentication (signup/login/logout, session persistence)
+- MongoDB-backed data — users, products, shops, orders, reviews
+- Fully responsive design
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React (Vite), React Router
+- **Backend:** Node.js, Express
+- **Database:** MongoDB (Mongoose)
+- **Auth:** JWT, bcrypt
+
+## Project Structure
